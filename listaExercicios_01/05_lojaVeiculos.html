@@ -17,17 +17,21 @@
 
     //PROCESSAMENTO
 const veiculo1 = prompt("Informe um veículo para ser inserido na lista");
-const tipoVeiculo = prompt("Informe o tipo de veículo (SUV, sedan ou Hatch):").toUpperCase();
+let tipoVeiculo = prompt("Informe o tipo de veículo (SUV, sedan ou Hatch):").toUpperCase();
     
 const veiculo2 = prompt("Informe outro veículo para ser inserido na lista");
-const tipoVeiculo2 = prompt("Informe o tipo de veículo (SUV, sedan ou Hatch):").toUpperCase();
+let tipoVeiculo2 = prompt("Informe o tipo de veículo (SUV, sedan ou Hatch):").toUpperCase();
     
 const veiculo3 = prompt("Informe mais um veículo para ser inserido na lista");
-const tipoVeiculo3 = prompt("Informe o tipo de veículo (SUV, sedan ou Hatch):").toUpperCase();
+let tipoVeiculo3 = prompt("Informe o tipo de veículo (SUV, sedan ou Hatch):").toUpperCase();
     //SAÍDA
 if(tipoVeiculo && tipoVeiculo2 && tipoVeiculo3 === `SUV`){
     carrosSUV.push(veiculo1, veiculo2, veiculo3)
  
+}else if(tipoVeiculo && tipoVeiculo2 && tipoVeiculo3 === `Hatch`){
+    carrosHatch.push(veiculo1, veiculo2, veiculo3)
+}else{
+    carrosSedan.push(veiculo1, veiculo2, veiculo3)
 }
 
 document.write(`Lista de veículos SUV: ${carrosSUV} <br/> Lista de carros Sedan: ${carrosSedan} <br/> Lista de carros Hatch: ${carrosHatch} `)
