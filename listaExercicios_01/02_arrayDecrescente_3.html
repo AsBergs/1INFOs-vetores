@@ -10,18 +10,18 @@
   let numerosEmOrdem
     //PROCESSAMENTO
 if(numero1 > numero2 && numero3 && numero2 > numero3 ){
-let numerosEmOrdem = [numero1, numero2, numero3];
+let numerosEmOrdem = [numero1 - numero2 - numero3];
 }else if(numero1 > numero2 && numero3 && numero3 > numero2){
-    let numerosEmOrdem = [numero1, numero3, numero2 ];
+    let numerosEmOrdem = [numero1 - numero3 - numero2 ];
 }else if(numero2 > numero1 && numero3 && numero1 > numero3){
-    let numerosEmOrdem = [numero2, numero1, numero3];
+    let numerosEmOrdem = [numero2 - numero1 - numero3];
 }else if(numero2 > numero1 && numero3 && numero3 > numero1){
-    let numerosEmOrdem = [numero2, numero3. numero1];
+    let numerosEmOrdem = [numero2 - numero3 - numero1];
 }else if(numero3 > numero2 && numero1 && numero2 > numero1){
-    let numerosEmOrdem = [numero3, numero2, numero1];
+    let numerosEmOrdem = [numero3 - numero2 - numero1];
 }else if(numero3 > numero1 && numero2 && numero1 > numero2){
-    let numerosEmOrdem = [numero3, numero1, numero2];
+    let numerosEmOrdem = [numero3 - numero1 - numero2];
 }
     //SAÍDA
-document.write(`Os números em ordem decrescente:`)
+document.write(`Os números em ordem decrescente: ${numerosEmOrdem}`)
 </script>
